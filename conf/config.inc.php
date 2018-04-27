@@ -35,7 +35,7 @@
 	$conf['servers'][0]['pg_dumpall_path'] = '/usr/bin/pg_dumpall';
 
 	// Example for a second server (PostgreSQL for Windows)
-	$conf['servers'][1]['desc'] = 'PostgreSQL RDS AWS V2';
+	$conf['servers'][1]['desc'] = 'Pg HEROKU';
 	$conf['servers'][1]['host'] =  getenv('PG_HOST_2');
 	$conf['servers'][1]['port'] = 5432;
 	$conf['servers'][1]['sslmode'] = 'allow';
