@@ -35,13 +35,13 @@
 	$conf['servers'][0]['pg_dumpall_path'] = '/usr/bin/pg_dumpall';
 
 	// Example for a second server (PostgreSQL for Windows)
-	//$conf['servers'][1]['desc'] = 'Test Server';
-	//$conf['servers'][1]['host'] = '127.0.0.1';
-	//$conf['servers'][1]['port'] = 5432;
-	//$conf['servers'][1]['sslmode'] = 'allow';
-	//$conf['servers'][1]['defaultdb'] = 'template1';
-	//$conf['servers'][1]['pg_dump_path'] = 'C:\\Program Files\\PostgreSQL\\8.0\\bin\\pg_dump.exe';
-	//$conf['servers'][1]['pg_dumpall_path'] = 'C:\\Program Files\\PostgreSQL\\8.0\\bin\\pg_dumpall.exe';
+	$conf['servers'][1]['desc'] = 'PostgreSQL RDS AWS V2';
+	$conf['servers'][1]['host'] =  getenv('PG_HOST_2');
+	$conf['servers'][1]['port'] = 5432;
+	$conf['servers'][1]['sslmode'] = 'allow';
+	$conf['servers'][1]['defaultdb'] = 'template1';
+	$conf['servers'][1]['pg_dump_path'] = '/usr/bin/pg_dump';
+	$conf['servers'][1]['pg_dumpall_path'] =  '/usr/bin/pg_dumpall';
 
 
 	/* Groups definition */
